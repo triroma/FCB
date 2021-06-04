@@ -1,21 +1,12 @@
-from PyQt5 import QtCore, QtGui, QtWidgets, Qt
+from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtWidgets import QLabel, QLineEdit
-from PyQt5.QtCore import pyqtSignal
-
-
-class QLabel_clickable(QLabel):
-    clicked = pyqtSignal()
-
-    def mousePressEvent(self, QMouseEvent):
-        self.clicked.emit()
 
 
 class MainWindow(QMainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
         self.setObjectName("MainWindow")
-        self.resize(800, 749)
+        self.setFixedSize(800, 750)
         self.setStyleSheet("background-color: rgb(42, 42, 42);")
         self.centralwidget = QtWidgets.QWidget(self)
         self.centralwidget.setObjectName("centralwidget")
@@ -373,7 +364,7 @@ class MainWindow(QMainWindow):
 "color: rgb(186, 186, 186);")
         self.label_your_logis_is.setAlignment(QtCore.Qt.AlignCenter)
         self.label_your_logis_is.setObjectName("label_your_logis_is")
-        self.label_user = QLabel_clickable(self)
+        self.label_user = QtWidgets.QLabel(self.centralwidget)
         self.label_user.setGeometry(QtCore.QRect(650, 0, 150, 50))
         font = QtGui.QFont()
         font.setPointSize(14)
@@ -386,7 +377,7 @@ class MainWindow(QMainWindow):
         self.label_user.setWordWrap(True)
         self.label_user.setObjectName("label_user")
         self.New_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.New_btn.setGeometry(QtCore.QRect(20, 670, 141, 51))
+        self.New_btn.setGeometry(QtCore.QRect(20, 670, 140, 50))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -396,7 +387,7 @@ class MainWindow(QMainWindow):
 "color: rgb(186, 186, 186);")
         self.New_btn.setObjectName("New_btn")
         self.edit_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.edit_btn.setGeometry(QtCore.QRect(180, 670, 141, 51))
+        self.edit_btn.setGeometry(QtCore.QRect(180, 670, 140, 50))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -406,7 +397,7 @@ class MainWindow(QMainWindow):
 "color: rgb(186, 186, 186);")
         self.edit_btn.setObjectName("edit_btn")
         self.delete_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_btn.setGeometry(QtCore.QRect(340, 670, 141, 51))
+        self.delete_btn.setGeometry(QtCore.QRect(340, 670, 140, 50))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -415,6 +406,16 @@ class MainWindow(QMainWindow):
         self.delete_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
 "color: rgb(186, 186, 186);")
         self.delete_btn.setObjectName("delete_btn")
+        self.exit_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.exit_btn.setGeometry(QtCore.QRect(650, 670, 140, 50))
+        font = QtGui.QFont()
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.exit_btn.setFont(font)
+        self.exit_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
+"color: rgb(255, 255, 255);")
+        self.exit_btn.setObjectName("exit_btn")
         self.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -519,10 +520,10 @@ class MainWindow(QMainWindow):
         self.New_btn.setText(_translate("MainWindow", "Создать"))
         self.edit_btn.setText(_translate("MainWindow", "Редактировать"))
         self.delete_btn.setText(_translate("MainWindow", "Удалить"))
+        self.exit_btn.setText(_translate("MainWindow", "Выйти из аккаунта"))
 
-    def contextMenuEvent(self, event):
-        menu = Qt.QMenu(self)
-        action = menu.addAction("Action")
-        result = menu.exec_(self.mapToGlobal(event.pos()))
-        if action == result:
-            print("Action")
+
+
+
+
+

@@ -1,16 +1,17 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMainWindow
 
+
 class RestoreWindow(QMainWindow):
     def __init__(self):
         super(RestoreWindow, self).__init__()
         self.setObjectName("RestoreWindow")
-        self.resize(480, 335)
+        self.setFixedSize(480, 335)
+        self.setStyleSheet("background-color: rgb(42, 42, 42);")
         self.centralwidget = QtWidgets.QWidget(self)
-        self.centralwidget.setStyleSheet("background-color: rgb(42, 42, 42);")
         self.centralwidget.setObjectName("centralwidget")
         self.label_restore = QtWidgets.QLabel(self.centralwidget)
-        self.label_restore.setGeometry(QtCore.QRect(70, 30, 340, 41))
+        self.label_restore.setGeometry(QtCore.QRect(70, 30, 340, 40))
         font = QtGui.QFont()
         font.setPointSize(18)
         font.setBold(True)
@@ -21,12 +22,12 @@ class RestoreWindow(QMainWindow):
         self.label_restore.setAlignment(QtCore.Qt.AlignCenter)
         self.label_restore.setObjectName("label_restore")
         self.email_input = QtWidgets.QLineEdit(self.centralwidget)
-        self.email_input.setGeometry(QtCore.QRect(70, 120, 341, 41))
+        self.email_input.setGeometry(QtCore.QRect(70, 120, 340, 40))
         self.email_input.setStyleSheet("background-color: rgb(83, 83, 83);\n"
 "color: rgb(186, 186, 186);")
         self.email_input.setObjectName("email_input")
         self.restore_password_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.restore_password_btn.setGeometry(QtCore.QRect(70, 180, 261, 41))
+        self.restore_password_btn.setGeometry(QtCore.QRect(110, 180, 260, 40))
         font = QtGui.QFont()
         font.setPointSize(16)
         font.setBold(True)
@@ -36,7 +37,7 @@ class RestoreWindow(QMainWindow):
 "color: rgb(186, 186, 186);")
         self.restore_password_btn.setObjectName("restore_password_btn")
         self.cancel_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.cancel_btn.setGeometry(QtCore.QRect(70, 240, 261, 41))
+        self.cancel_btn.setGeometry(QtCore.QRect(110, 240, 260, 40))
         font = QtGui.QFont()
         font.setPointSize(16)
         font.setBold(True)
