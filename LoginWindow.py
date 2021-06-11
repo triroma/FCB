@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtWidgets import QMainWindow
-from PyQt5.QtWidgets import QLabel, QLineEdit
+from PyQt5.QtWidgets import QLabel
 from PyQt5.QtCore import pyqtSignal
 
 
@@ -26,8 +26,8 @@ class LoginWindow(QMainWindow):
         font.setBold(True)
         font.setWeight(75)
         self.label_login.setFont(font)
-        self.label_login.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+        self.label_login.setStyleSheet("background-color: rgb(150, 150, 150);\n"
+"color: rgb(50, 50, 50);")
         self.label_login.setAlignment(QtCore.Qt.AlignCenter)
         self.label_login.setObjectName("label_login")
         self.login_input = QtWidgets.QLineEdit(self.centralwidget)
@@ -102,7 +102,7 @@ class LoginWindow(QMainWindow):
 
     def retranslateUi(self, LoginWindow):
         _translate = QtCore.QCoreApplication.translate
-        self.setWindowTitle(_translate("LoginWindow", "MainWindow"))
+        self.setWindowTitle(_translate("LoginWindow", "Авторизация"))
         self.label_login.setText(_translate("LoginWindow", "Окно авторизации"))
         self.login_input.setPlaceholderText(_translate("LoginWindow", "Имя пользователя..."))
         self.password_input.setPlaceholderText(_translate("LoginWindow", "Пароль..."))

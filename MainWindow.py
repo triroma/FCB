@@ -17,6 +17,7 @@ class MainWindow(QMainWindow):
         self.page_1 = QtWidgets.QWidget()
         self.page_1.setObjectName("page_1")
         self.tableWidget_1 = QtWidgets.QTableWidget(self.page_1)
+        self.tableWidget_1.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_1.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_1.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_1.setRowCount(0)
@@ -33,6 +34,7 @@ class MainWindow(QMainWindow):
         self.page_4 = QtWidgets.QWidget()
         self.page_4.setObjectName("page_4")
         self.tableWidget_4 = QtWidgets.QTableWidget(self.page_4)
+        self.tableWidget_4.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_4.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_4.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_4.setRowCount(0)
@@ -49,6 +51,7 @@ class MainWindow(QMainWindow):
         self.page_7 = QtWidgets.QWidget()
         self.page_7.setObjectName("page_7")
         self.tableWidget_7 = QtWidgets.QTableWidget(self.page_7)
+        self.tableWidget_7.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_7.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_7.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_7.setRowCount(0)
@@ -65,6 +68,7 @@ class MainWindow(QMainWindow):
         self.page_8 = QtWidgets.QWidget()
         self.page_8.setObjectName("page_8")
         self.tableWidget_8 = QtWidgets.QTableWidget(self.page_8)
+        self.tableWidget_8.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_8.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_8.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_8.setRowCount(0)
@@ -81,6 +85,7 @@ class MainWindow(QMainWindow):
         self.page_9 = QtWidgets.QWidget()
         self.page_9.setObjectName("page_9")
         self.tableWidget_9 = QtWidgets.QTableWidget(self.page_9)
+        self.tableWidget_9.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_9.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_9.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_9.setRowCount(0)
@@ -97,6 +102,7 @@ class MainWindow(QMainWindow):
         self.page_10 = QtWidgets.QWidget()
         self.page_10.setObjectName("page_10")
         self.tableWidget_10 = QtWidgets.QTableWidget(self.page_10)
+        self.tableWidget_10.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_10.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_10.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_10.setRowCount(0)
@@ -113,6 +119,7 @@ class MainWindow(QMainWindow):
         self.page_11 = QtWidgets.QWidget()
         self.page_11.setObjectName("page_11")
         self.tableWidget_11 = QtWidgets.QTableWidget(self.page_11)
+        self.tableWidget_11.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_11.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_11.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_11.setRowCount(0)
@@ -129,6 +136,7 @@ class MainWindow(QMainWindow):
         self.page_12 = QtWidgets.QWidget()
         self.page_12.setObjectName("page_12")
         self.tableWidget_12 = QtWidgets.QTableWidget(self.page_12)
+        self.tableWidget_12.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_12.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_12.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_12.setRowCount(0)
@@ -145,6 +153,7 @@ class MainWindow(QMainWindow):
         self.page_13 = QtWidgets.QWidget()
         self.page_13.setObjectName("page_13")
         self.tableWidget_13 = QtWidgets.QTableWidget(self.page_13)
+        self.tableWidget_13.setEditTriggers(QtWidgets.QAbstractItemView.NoEditTriggers)
         self.tableWidget_13.setGeometry(QtCore.QRect(0, 0, 725, 600))
         self.tableWidget_13.setMinimumSize(QtCore.QSize(725, 0))
         self.tableWidget_13.setRowCount(0)
@@ -230,7 +239,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_1.setFont(font)
         self.pushButton_1.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_1.setObjectName("pushButton_1")
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(0, 25, 75, 25))
@@ -240,7 +249,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_2.setFont(font)
         self.pushButton_2.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_2.setObjectName("pushButton_2")
         self.pushButton_3 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_3.setGeometry(QtCore.QRect(0, 50, 75, 25))
@@ -250,7 +259,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_3.setFont(font)
         self.pushButton_3.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_3.setObjectName("pushButton_3")
         self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_4.setGeometry(QtCore.QRect(0, 75, 75, 25))
@@ -260,7 +269,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_4.setFont(font)
         self.pushButton_4.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_4.setObjectName("pushButton_4")
         self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_5.setGeometry(QtCore.QRect(0, 100, 75, 25))
@@ -270,7 +279,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_5.setFont(font)
         self.pushButton_5.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_5.setObjectName("pushButton_5")
         self.pushButton_6 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_6.setGeometry(QtCore.QRect(0, 125, 75, 25))
@@ -280,7 +289,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_6.setFont(font)
         self.pushButton_6.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_6.setObjectName("pushButton_6")
         self.pushButton_7 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_7.setGeometry(QtCore.QRect(0, 150, 75, 25))
@@ -290,7 +299,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_7.setFont(font)
         self.pushButton_7.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_7.setObjectName("pushButton_7")
         self.pushButton_8 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_8.setGeometry(QtCore.QRect(0, 175, 75, 25))
@@ -300,7 +309,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_8.setFont(font)
         self.pushButton_8.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_8.setObjectName("pushButton_8")
         self.pushButton_9 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_9.setGeometry(QtCore.QRect(0, 200, 75, 25))
@@ -310,7 +319,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_9.setFont(font)
         self.pushButton_9.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                        "color: rgb(186, 186, 186);")
         self.pushButton_9.setObjectName("pushButton_9")
         self.pushButton_10 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_10.setGeometry(QtCore.QRect(0, 225, 75, 25))
@@ -320,7 +329,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_10.setFont(font)
         self.pushButton_10.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                         "color: rgb(186, 186, 186);")
         self.pushButton_10.setObjectName("pushButton_10")
         self.pushButton_11 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_11.setGeometry(QtCore.QRect(0, 250, 75, 25))
@@ -330,7 +339,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_11.setFont(font)
         self.pushButton_11.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                         "color: rgb(186, 186, 186);")
         self.pushButton_11.setObjectName("pushButton_11")
         self.pushButton_12 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_12.setGeometry(QtCore.QRect(0, 275, 75, 25))
@@ -340,7 +349,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_12.setFont(font)
         self.pushButton_12.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                         "color: rgb(186, 186, 186);")
         self.pushButton_12.setObjectName("pushButton_12")
         self.pushButton_13 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_13.setGeometry(QtCore.QRect(0, 300, 75, 25))
@@ -350,7 +359,7 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.pushButton_13.setFont(font)
         self.pushButton_13.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                         "color: rgb(186, 186, 186);")
         self.pushButton_13.setObjectName("pushButton_13")
         self.label_your_logis_is = QtWidgets.QLabel(self.centralwidget)
         self.label_your_logis_is.setGeometry(QtCore.QRect(450, 0, 200, 50))
@@ -361,7 +370,7 @@ class MainWindow(QMainWindow):
         self.label_your_logis_is.setFont(font)
         self.label_your_logis_is.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_your_logis_is.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                               "color: rgb(186, 186, 186);")
         self.label_your_logis_is.setAlignment(QtCore.Qt.AlignCenter)
         self.label_your_logis_is.setObjectName("label_your_logis_is")
         self.label_user = QtWidgets.QLabel(self.centralwidget)
@@ -372,49 +381,39 @@ class MainWindow(QMainWindow):
         font.setWeight(75)
         self.label_user.setFont(font)
         self.label_user.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                      "color: rgb(186, 186, 186);")
         self.label_user.setAlignment(QtCore.Qt.AlignCenter)
         self.label_user.setWordWrap(True)
         self.label_user.setObjectName("label_user")
         self.New_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.New_btn.setGeometry(QtCore.QRect(20, 670, 140, 50))
+        self.New_btn.setGeometry(QtCore.QRect(30, 670, 140, 50))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
         self.New_btn.setFont(font)
         self.New_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                   "color: rgb(186, 186, 186);")
         self.New_btn.setObjectName("New_btn")
-        self.edit_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.edit_btn.setGeometry(QtCore.QRect(180, 670, 140, 50))
+        self.refresh_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.refresh_btn.setGeometry(QtCore.QRect(200, 670, 140, 50))
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
         font.setWeight(75)
-        self.edit_btn.setFont(font)
-        self.edit_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
-        self.edit_btn.setObjectName("edit_btn")
-        self.delete_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.delete_btn.setGeometry(QtCore.QRect(340, 670, 140, 50))
-        font = QtGui.QFont()
-        font.setPointSize(12)
-        font.setBold(True)
-        font.setWeight(75)
-        self.delete_btn.setFont(font)
-        self.delete_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
-        self.delete_btn.setObjectName("delete_btn")
+        self.refresh_btn.setFont(font)
+        self.refresh_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
+                                       "color: rgb(186, 186, 186);")
+        self.refresh_btn.setObjectName("refresh_btn")
         self.exit_btn = QtWidgets.QPushButton(self.centralwidget)
-        self.exit_btn.setGeometry(QtCore.QRect(650, 670, 140, 50))
+        self.exit_btn.setGeometry(QtCore.QRect(630, 670, 140, 50))
         font = QtGui.QFont()
         font.setPointSize(10)
         font.setBold(True)
         font.setWeight(75)
         self.exit_btn.setFont(font)
         self.exit_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(255, 255, 255);")
+                                    "color: rgb(255, 255, 255);")
         self.exit_btn.setObjectName("exit_btn")
         self.setCentralWidget(self.centralwidget)
 
@@ -423,7 +422,7 @@ class MainWindow(QMainWindow):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        self.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.setWindowTitle(_translate("MainWindow", "Контакты"))
         item = self.tableWidget_1.horizontalHeaderItem(0)
         item.setText(_translate("MainWindow", "Имя"))
         item = self.tableWidget_1.horizontalHeaderItem(1)
@@ -518,12 +517,5 @@ class MainWindow(QMainWindow):
         self.label_your_logis_is.setText(_translate("MainWindow", "Вы вошли как:"))
         self.label_user.setText(_translate("MainWindow", ""))
         self.New_btn.setText(_translate("MainWindow", "Создать"))
-        self.edit_btn.setText(_translate("MainWindow", "Редактировать"))
-        self.delete_btn.setText(_translate("MainWindow", "Удалить"))
+        self.refresh_btn.setText(_translate("MainWindow", "Обновить"))
         self.exit_btn.setText(_translate("MainWindow", "Выйти из аккаунта"))
-
-
-
-
-
-

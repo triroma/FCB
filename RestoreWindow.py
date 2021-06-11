@@ -17,14 +17,14 @@ class RestoreWindow(QMainWindow):
         font.setBold(True)
         font.setWeight(75)
         self.label_restore.setFont(font)
-        self.label_restore.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+        self.label_restore.setStyleSheet("background-color: rgb(150, 150, 150);\n"
+                                         "color: rgb(50, 50, 50);")
         self.label_restore.setAlignment(QtCore.Qt.AlignCenter)
         self.label_restore.setObjectName("label_restore")
         self.email_input = QtWidgets.QLineEdit(self.centralwidget)
         self.email_input.setGeometry(QtCore.QRect(70, 120, 340, 40))
         self.email_input.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                       "color: rgb(186, 186, 186);")
         self.email_input.setObjectName("email_input")
         self.restore_password_btn = QtWidgets.QPushButton(self.centralwidget)
         self.restore_password_btn.setGeometry(QtCore.QRect(110, 180, 260, 40))
@@ -34,7 +34,7 @@ class RestoreWindow(QMainWindow):
         font.setWeight(75)
         self.restore_password_btn.setFont(font)
         self.restore_password_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                                "color: rgb(186, 186, 186);")
         self.restore_password_btn.setObjectName("restore_password_btn")
         self.cancel_btn = QtWidgets.QPushButton(self.centralwidget)
         self.cancel_btn.setGeometry(QtCore.QRect(110, 240, 260, 40))
@@ -44,7 +44,7 @@ class RestoreWindow(QMainWindow):
         font.setWeight(75)
         self.cancel_btn.setFont(font)
         self.cancel_btn.setStyleSheet("background-color: rgb(83, 83, 83);\n"
-"color: rgb(186, 186, 186);")
+                                      "color: rgb(186, 186, 186);")
         self.cancel_btn.setObjectName("cancel_btn")
         self.setCentralWidget(self.centralwidget)
 
@@ -53,9 +53,8 @@ class RestoreWindow(QMainWindow):
 
     def retranslateUi(self, RestoreWindow):
         _translate = QtCore.QCoreApplication.translate
-        self.setWindowTitle(_translate("RestoreWindow", "MainWindow"))
+        self.setWindowTitle(_translate("RestoreWindow", "Восстановление пароля"))
         self.label_restore.setText(_translate("RestoreWindow", "Восстановление пароля"))
         self.email_input.setPlaceholderText(_translate("RestoreWindow", "Адрес электронной почты..."))
         self.restore_password_btn.setText(_translate("RestoreWindow", "Восстановить пароль"))
         self.cancel_btn.setText(_translate("RestoreWindow", "Отмена"))
-
